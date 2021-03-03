@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nombre</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <style>
+       
+        body{
+            background: url('../images/background.png') ;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .container{
+            background: #524E7D;
+            min-height: 100vh;
+            box-shadow: 0 0 50px #524EB7;
+        }
+        p, h1{
+            color: white;
+        }
+
+        .historique{
+            max-height: 400px;
+            overflow-y: scroll;
+        }
+
+        .list-group-item b{
+            margin-left: 5%;
+        }
+
+        .list-group{
+           
+        display: flex;
+        flex-direction: column-reverse;
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3 class="text-center" ><a style="color: white; text-decoration: none;" href="../index.html">Index</a></h3>
+        <br><br><br><br><br>
+        <h1 class="text-center"> <b>Compteur</b> </h1>
+        <br><br><br>
+        <div class="row">
+            <div class="col-12">
+                <div class="col-5">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="">Nombre</span>
+                        </div>
+                        <input type="number" min="1" max="10" class="form-control" id="userInput" placeholder="Nombre entre 1 et 10">
+                        <div class="input-group-prepend">
+                            <button class="btn btn-light" type="button" id="sendUser">Envoyer</button>
+                          </div>
+                      </div>
+                </div>
+                <div class="col-7">
+    
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+              
+            </div>
+            <div class="col-6 historique">
+                <ul class="list-group">
+                   
+                  </ul>
+            </div>
+           
+        </div>
+
+       
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

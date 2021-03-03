@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulaire</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    />
+    <style>
+      body {
+        background: url("../images/background.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+
+      .container {
+        background: #524e7d;
+        min-height: 100vh;
+        box-shadow: 0 0 50px #524eb7;
+      }
+      p,
+      h1 {
+        color: white;
+      }
+      .form-group label {
+        color: white;
+      }
+
+      .form-group input {
+        width: 70%;
+      }
+
+      .flex {
+        display: flex;
+      }
+
+      @keyframes response {
+        0% {
+          margin-left: 0px;
+          opacity: 0;
+        }
+
+        100% {
+          margin-left: 20px;
+          opacity: 1;
+        }
+      }
+
+      .result div {
+        opacity: 1;
+        margin-left: 20px;
+        animation: response 1s;
+        font-size: 10px;
+        pointer-events: none;
+      }
+    </style>
+    <script type="module" src="./script.module.js"></script>
+    <script type="module" src="./class.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h3 class="text-center" ><a style="color: white; text-decoration: none;" href="../index.html">Index</a></h3>
+        <br /><br /><br /><br /><br />
+        <h1 class="text-center"><b>Eleves</b></h1>
+        <br /><br /><br />
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-10">
+                <ul class="list-group">
+                    
+                </ul>
+            </div>
+            <div class="col-1"></div>
+        </div>
+        <br><br><br><br>
+    </div>
+    
+    <script type="module" src="script.js"></script>
+  </body>
+</html>

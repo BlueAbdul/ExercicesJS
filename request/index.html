@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Request</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    />
+    <style>
+      body {
+        background: url("../images/background.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+
+      .container {
+        background: #524e7d;
+        min-height: 100vh;
+        box-shadow: 0 0 50px #524eb7;
+      }
+      p,
+      h1 {
+        color: white;
+      }
+      .form-group label {
+        color: white;
+      }
+
+      .form-group input {
+        width: 70%;
+      }
+
+      .flex {
+        display: flex;
+      }
+
+      @keyframes loading {
+        0% {
+          transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+      }
+
+      @keyframes fadeIn{
+        0% {
+          opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+      }
+
+      #loading{
+          animation : loading 1s infinite;
+      }
+
+      .imhere{
+        opacity: 1;
+        animation: fadeIn 2s;
+      }
+
+      .table-result{
+          max-height: 500px;
+          overflow-y: scroll;
+      }
+     
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="./script.module.js"></script>
+    
+</head>
+<body>
+    <div class="container">
+        <h3 class="text-center" ><a style="color: white; text-decoration: none;" href="../index.html">Index</a></h3>
+        <br /><br /><br /><br /><br />
+        <h1 class="text-center"><b>Requete</b></h1>
+        <br /><br /><br />
+        <div class="row table-result">
+            <table class="table table-dark ">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col" colspan="2">Title</th>
+                    
+                   
+                  </tr>
+                </thead>
+                <tbody class="result">
+                  <tr>
+                    <td colspan="3">
+                        <div class="row ">
+                            <h1 class="text-light mx-auto">
+                                Données en cours de chargement...
+                            </h1>
+                        </div>
+                        <div class="row">
+
+                            <img class="mx-auto" id="loading" src="./images/defeat.png" alt="">
+                        </div>
+                        <br><br><br>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+        <br><br><br><br>
+    </div>
+    
+    <script type="module" src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nombre</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <style>
+       
+        body{
+            background: url('../images/background.png') ;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .container{
+            background: #524E7D;
+            min-height: 100vh;
+            box-shadow: 0 0 50px #524EB7;
+        }
+        p, h1{
+            color: white;
+        }
+     
+        .canva
+        {
+            width: 40vw;
+            height: 40vh;
+            margin: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3 class="text-center" ><a style="color: white; text-decoration: none;" href="../index.html">Index</a></h3>
+        <br><br><br><br><br>
+        <h1 class="text-center"> <b>Color</b> </h1>
+        <br><br><br>
+        <div class="row">
+          
+               <canvas class="canva">
+
+               </canvas>
+          
+          
+           
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-2">
+                <a class="btn btn-info" id="send">Randomize</a>
+            </div>
+            <div class="col-10">
+                <form>
+                    <div class="form-group">
+                      <label for="formControlRange" class="text-light">Rouge</label>
+                      <input type="range" min="0" max="265" class="form-control-range" id="form">
+                    </div>
+                    <div class="form-group">
+                      <label for="formControlRange" class="text-light">Vert</label>
+                      <input type="range" min="0" max="265" class="form-control-range" id="form1">
+                    </div>
+                    <div class="form-group">
+                      <label for="formControlRange" class="text-light">Bleu</label>
+                      <input type="range" min="0" max="265" class="form-control-range" id="form2">
+                    </div>
+                  </form>
+                  <form>
+                   
+            </div>
+        </div>
+       
+    </div>
+
+   <script src="script.js"></script>
+</body>
+</html>
