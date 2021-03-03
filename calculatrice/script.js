@@ -23,7 +23,8 @@ const watcher = () => {
 
     valid.addEventListener('click', (e) =>{
         let calcul = eval(document.querySelector('.calculator-screen').value);
-        if(calcul = Infinity){
+        
+        if(calcul === Infinity){
             document.querySelector('.malin').innerHTML = '<img src="https://media.tenor.com/images/d968728f0a24fc31ee1c8b6b36bc3968/tenor.gif" alt="">';
             document.querySelector('.calculator-screen').value = 'pls';
             document.querySelector('.all-clear').classList.add('glow');
