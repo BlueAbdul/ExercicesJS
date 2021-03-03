@@ -20,18 +20,20 @@ const game = () =>{
         console.log(userScore);
         if(userScore === 421 || userScore === 124 || userScore === 142 || userScore === 241 || userScore === 214 ){
             let doc = document.querySelector('.user');
-            let result = document.querySelector('.score');
+            let result = document.querySelector('.userScore');
             userWin++;
             doc.innerHTML += `<p class="text-dark"><b class="text-success">Gagné ! </b> Jet : ${userScore}</p>`;
             result.innerHTML = `Moi : ${userWin}`;
         }
         if(cpuScore === 421 || cpuScore === 124 || cpuScore === 142 || cpuScore === 241 || cpuScore === 214 ){
             let doc = document.querySelector('.computer');
-            let resultCPU = document.querySelector('.CPU');
+            let resultCPU = document.querySelector('.scoreCPU');
             doc.innerHTML += `<p class="text-dark"><b class="text-success">Gagné ! </b> Jet : ${cpuScore}</p>`;
             computerWin++;
             resultCPU.innerHTML = `CPU : ${computerWin}`;
-        } else{
+        } 
+        
+        else{
             let doc = document.querySelector('.user');
             let docCPU = document.querySelector('.computer');
             doc.innerHTML += `<p class="text-dark"><b class="text-danger">Perdu ! </b> Jet : ${userScore}</p>`
